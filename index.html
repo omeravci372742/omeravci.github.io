@@ -9,32 +9,14 @@
 <meta name="google-site-verification" content="0TIS00PPQtFL2BHvJnIpxZ43l0vGrM_gHVWKqJglDfk" />  
 
     <style>
-  .header-image {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-  }
+.hero {
+  width: 100%;
+  aspect-ratio: 3 / 1; /* Controls height responsively — adjust if needed */
+  background-image: url('/images/mainimagebackground.jpg');
+  background-size: cover;
+  background-position: center 30%; /* Adjust up/down: 0% (top) → 100% (bottom) */
+}
 
-  .content-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .profile-img {
-    width: 200px;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 768px) {
-    .content-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .profile-img { width: 180px; }
-  }
 </style>
 
     
