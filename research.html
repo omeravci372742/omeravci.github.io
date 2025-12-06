@@ -10,6 +10,25 @@ a {
   color: #ff69b4;         /* soft pink */
   text-decoration: none;  /* removes underline */
 }
+/* Navigation links */
+nav a {
+  color: #4b0082;          /* dark purple */
+  text-decoration: underline;  /* keep underline */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Navigation hover effect */
+nav a:hover,
+nav a.active {
+  color: #6a0dad;          /* slightly lighter purple on hover */
+  text-decoration: underline;
+}
+
+/* Navigation visited links */
+nav a:visited {
+  color: #4b0082;          /* dark purple, same as unvisited */
+}
 
       
 .content-container {
@@ -44,11 +63,11 @@ a {
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a class="active" href="research.html">Research</a>
-  <a href="talks.html">Talks & Events</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="videos.html">Videos</a>
+  <nav a href="index.html">Home</a>
+  <nav a class="active" href="research.html">Research</a>
+  <nav a href="talks.html">Talks & Events</a>
+  <nav a href="teaching.html">Teaching</a>
+  <nav a href="videos.html">Videos</a>
 </nav>
 
 <!-- Main content block -->
