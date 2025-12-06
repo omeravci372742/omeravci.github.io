@@ -7,48 +7,89 @@
 
     <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="0TIS00PPQtFL2BHvJnIpxZ43l0vGrM_gHVWKqJglDfk" />  
+
+    <style>
+  .header-image {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+  }
+
+  .content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .profile-img { width: 180px; }
+  }
+</style>
+
+    
 </head>
 <body>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="talks.html">Talks & Events</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="videos.html">Videos</a>
+<!-- Navigation bar -->
+<nav style="background:#f5f5f5; padding:12px; text-align:center; font-size:18px;">
+  <a href="index.html" style="margin: 0 15px;">Home</a>
+  <a href="research.html" style="margin: 0 15px;">Research</a>
+  <a href="talks.html" style="margin: 0 15px;">Talks & Events</a>
+  <a href="teaching.html" style="margin: 0 15px;">Teaching</a>
+  <a href="videos.html" style="margin: 0 15px;">Videos</a>
 </nav>
 
-<header>
-  <h1>Ömer Avcı - Omer Avci</h1>
-  <p>PhD Student – University of Ottawa</p>
-</header>
+    
+<!-- Top banner -->
+<img src="images/mainimagebackground.jpg" alt="Background" class="header-image">
 
-<section>
-  <h2>Welcome</h2>
+<!-- Main content block -->
+<div class="content-container">
+  
+  <!-- Left side profile image -->
+  <img src="images/imagemain.jpeg" alt="Omer Avci" class="profile-img">
 
-  <p>I am a first-year PhD student at the University of Ottawa, working on elliptic curves with Antonio Lei and Payman Eskandari.</p>
+  <!-- Right side text -->
+  <div>
+    <h1>Omer Avci</h1>
+    <p><strong>PhD Student – University of Ottawa</strong></p>
 
-  <p>I worked as a senior research assistant under the supervision of Payman Eskandari at the University of Winnipeg between September 2024 - July 2025.</p>
+    <p>
+      I am a first year PhD student at University of Ottawa, working on elliptic curves with
+      Antonio Lei and Payman Eskandari. I worked as a senior research assistant under the
+      supervision of Payman Eskandari at University of Winnipeg between September 2024 - July 2025.
+    </p>
 
-  <p>My research lies in the area of algebraic number theory and mainly focuses on torsion groups of elliptic curves. 
-   
-  <p>I am interested in rational points on curves, elliptic curves, torsion groups, modular curves, and Galois representations.</p>
+    <p>
+      My research lies in algebraic number theory and mainly focuses on torsion groups of elliptic
+      curves. I am interested in rational points on curves, elliptic curves, torsion groups, modular curves
+      and Galois representations.
+    </p>
 
-  <p>My master thesis, under the supervision of Ekin Özman, focuses on classifying torsion subgroups of rational elliptic curves over cyclotomic fields.</p>
+    <p>
+      My master's thesis under the supervision of Ekin Özman focuses on classifying torsion subgroups
+      of rational elliptic curves over cyclotomic fields. I enjoy solving olympiad number theory problems
+      when I get the chance.
+    </p>
 
-  <p>I have taken multiple analytical number theory classes from Cem Yalcın Yıldırım.</p>
+    <p>
+      I completed double major BSc in Electrical & Electronics Engineering and Mathematics at Boğaziçi University (2021).
+    </p>
 
-  <p>I enjoy solving olympiad number theory problems when I can get my hands on one of them :)</p>
+    <p><a href="cv.pdf" target="_blank"><strong>Download my CV</strong></a></p>
+  </div>
 
-  <p>I completed my bachelor's degrees in Electrical & Electronics Engineering and Mathematics at Bogazici University in Summer 2021.</p>
-
-  <p>You can find my <a href="https://drive.google.com/file/d/12p04ulYaVjtdpee5dydQ6-0sB4rwr9_f/view" target="_blank">CV here</a>.</p>
-</section>
-
-
-<footer>
-  <p>© 2025 Omer Avci</p>
-</footer>
+</div>
 
 </body>
 </html>
