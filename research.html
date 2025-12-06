@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Research – Omer Avci</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Research - Omer Avci</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .research-container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .research-img {
+      width: 220px;
+      border-radius: 10px;
+    }
+
+    @media(max-width: 768px) {
+      .research-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .research-img { width: 200px; }
+    }
+  </style>
 </head>
+
 <body>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a class="active" href="research.html">Research</a>
-  <a href="talks.html">Talks & Events</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="videos.html">Videos</a>
-</nav>
-
-<header>
   <h1>Research</h1>
-</header>
 
-<section>
-  <h2>Papers & Preprints</h2>
+  <div class="research-container">
+    <!-- LEFT IMAGE -->
+    <img src="images/researchimage.jpg" class="research-img" alt="Research photo">
 
-  <h3>Journal Papers</h3>
-  <ul>
-    <li><a href="#" target="_blank"><strong>Torsion of Rational Elliptic Curves over the Z<sub>p</sub>-Extensions of Quadratic Fields</strong></a>, Journal of Number Theory, Published: September 2025.</li>
-    <li><a href="#" target="_blank"><strong>Torsion of Rational Elliptic Curves over the Cyclotomic Extensions of Q</strong></a>, June 2024 (to appear in Acta Arithmetica).</li>
-    <li><a href="#" target="_blank"><strong>Large Zsigmondy Primes</strong></a>, Integers Journal, Published: July 2024.</li>
-  </ul>
+    <!-- RIGHT TEXT -->
+    <div>
+      <h2>Journal Papers</h2>
+      <ul>
+        <li><a href="#">Torsion of Rational Elliptic Curves over the Zp-Extensions of Quadratic Fields</a>, Journal of Number Theory, Published: September 2025.</li>
+        <li><a href="#">Torsion of Rational Elliptic Curves over the Cyclotomic Extensions of Q</a>, June 2024 (to appear in Acta Arithmetica).</li>
+        <li><a href="#">Large Zsigmondy Primes</a>, Integers Journal, Published: July 2024.</li>
+      </ul>
 
-  <h3>Master's Thesis</h3>
-  <ul>
-    <li><a href="#" target="_blank"><strong>Torsion of Rational Elliptic Curves over the Cyclotomic Extensions of Q</strong></a>, May 2024.</li>
-  </ul>
+      <h2>Master's Thesis</h2>
+      <ul>
+        <li><a href="#">Torsion of Rational Elliptic Curves over the Cyclotomic Extensions of Q</a>, May 2024.</li>
+      </ul>
 
-  <h3>Preprints</h3>
-  <ul>
-    <li><a href="#" target="_blank"><strong>Generalization of Apollonius Circle</strong></a>, with Omer Talip Akalin, Faruk Avci and Halil Salih Orhan, May 2021.</li>
-  </ul>
+      <h2>Preprints</h2>
+      <ul>
+        <li><a href="#">Generalization of Apollonius Circle</a>, with Omer Talip Akalin, Faruk Avci and Halil Salih Orhan, May 2021.</li>
+      </ul>
+    </div>
+  </div>
 
-</section>
-
-<footer>
-  <p>© 2025 Omer Avci</p>
-</footer>
-
+  <p><a href="index.html">Back to Home</a></p>
 </body>
 </html>
