@@ -5,6 +5,36 @@
 <title>Teaching – Omer Avci</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Teaching page image */
+.teaching-img {
+  width: 220px;         /* adjust width */
+  max-height: 300px;    /* optional max-height to prevent huge image */
+  border-radius: 10px;  /* rounded corners */
+  object-fit: cover;    /* keeps proportions */
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .research-img {
+    width: 200px;
+    max-height: none;
+  }
+}
+  
+  
 <body>
 
 <nav>
@@ -19,7 +49,7 @@
 <div class="content-container">
   
   <!-- Left side profile image -->
-  <img src="images/teachingimage.jpg" alt="Omer Avci" class="profile-img">
+  <img src="images/teachingimage.jpg" alt="Teaching Image" class="teaching-img">
 
   <!-- Right side text -->  
 <div>
